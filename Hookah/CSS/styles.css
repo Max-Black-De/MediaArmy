@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;700&display=swap');
+
+html, body {
+    margin: 0 auto;
+
+}
+
+.top-grid-container{
+    display: grid;
+    grid-template-columns: 4.58fr 5.42fr;
+    height: 870px;
+    margin: 0 auto;
+}
+
+/*стили левого блока */
+.left-grid-item{
+    background-color: #30333C;
+    width: 45.83vw;
+}
+.logo-and-soc-icons {
+    display: grid;
+    grid-template-columns: minmax(auto, 300px) 111px auto minmax(auto,100px) 1fr;
+}
+.logo-frame {
+    width: 111px;
+    height: 150px;
+    background: #6C525B
+}
+.logo-img{
+    width: 91px;
+    height: 93px;
+    margin: 28px 10px;
+}
+.curly-smoke {
+    width: 166px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #E3E7EF;
+    margin: 96px 0 0 -28px;
+}
+.soc-icons{
+    width: 110px;
+    margin: 99px 22px 0 34px;
+}
+.insta,.facebook {
+    padding: 0 0 0 29px;
+}
+/***************/
+.smoke{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 551px;
+}
+.social-smoke {
+    width: 21vw;
+    /* 378 */
+}
+.rectangle {
+    /* display: none; */
+    position: relative;
+    border: 7px solid #6C525B;
+    width: 386px;
+    height: 20.28vw;
+    min-height: 277px;
+    box-sizing: border-box;
+    margin: 112px 0 0 -78px;
+}
+.caption-container-main {
+    width: 44.11vw;
+    min-width: 685px;
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 84.57px;
+    /* font-size: 3.27vw; */
+    font-size: calc( (100vw - 678px)/(1800 - 678) * (58 - 51) + 45px);
+    color: #FFFFFF;
+    margin: 5vw 0 0 -7px;
+    
+}
+/***************/
+.top-contacts{
+    position: relative;
+    border-top: 1px solid rgba(77, 81, 94, 1);
+    width: 671px;
+    height: 71px;
+    margin-left: -94px;
+}
+.contacts-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 71px;
+}
+.phone{
+    /* width: 155px; */
+    height: 23px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    color: #C8CDD8;
+}
+.adress{
+    text-align: left;
+    height: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C8CDD8;
+}
+.working-time{
+    height: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #C8CDD8;
+}
+
+/*стили правого блока*/
+.right-grid-item{
+    width: 54.17vw;
+    background-image: url(../images/cityView.svg);
+    background-position: center;
+    background-size: cover;
+}
+.nav-grid {
+    margin: 100px 30px 0 45px;
+    display: grid;
+    grid-template-columns: repeat(6, max-content);
+    /* width: 612px;
+    height: 22px; */
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid rgb(108, 82, 91, 1);
+}
+
+.nav-grid a {
+    color: #EDF0F4;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.85vw;
+    line-height: 21px;
+}
+
+/* Контейнер с информацией о клубе */
+.info-container {
+    background-color: #AAADB7;
+    display: flex;
+    justify-content: center;
+}
+
+.info-grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 350px 250px;
+    width: 1200px;
+    height: 609px;
+    column-gap: 67px;
+    row-gap: 28px;
+    margin: 71px 0 65px 0;
+}
+
+.info-grid-container > div:nth-child(1) {
+    grid-column: 1/3;
+}
+.main-info{
+    width: 612px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.traditions{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 52px;
+    color: #2B2D33;
+}
+.about-traditions{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    color: rgba(43, 45, 51, 1);
+
+}
+.shisha-cont{
+    margin-left: -100px;
+}
+
+.service-cont,.relax-cont,.for-cont{
+    width: 355px;
+    height: 0px;
+    border-top: 1px solid #BDC4CF;
+    display: grid;
+    grid-gap: 27px;
+    padding-top: 37px;
+
+}
+.service,.relax,.for {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2B2D33;
+}
+.services,.relaxations,.for-whom{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #585E67;
+}
+
+/* Малые девайсы (горизонтальные телефоны, >= 576px)*/
+@media (min-width: 576px) {}
+
+/* Средние девайсы (планшеты, >= 768px) */
+@media (min-width: 768px) { }
+
+/* Большие девайсы (десктопы, >= 992px) */
+@media (min-width: 992px) { }
+
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+@media (min-width: 1200px) { }
